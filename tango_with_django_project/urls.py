@@ -21,6 +21,5 @@ from rango import views
 urlpatterns = [
         url(r'^$', views.index, name='index'),
         url(r'^rango/', include('rango.urls')),
-# 上面的映射把以 rango/ 开头的 URL 交给 rango 应用处理
         url(r'^admin/', admin.site.urls),
         ]
